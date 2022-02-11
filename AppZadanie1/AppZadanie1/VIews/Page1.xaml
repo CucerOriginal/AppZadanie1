@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppZadanie1.ViewModel"
+             x:Class="AppZadanie1.VIews.Page1"
+             BackgroundColor="Black">
+    <ContentPage.BindingContext>
+        <local:ViewModel1/>
+    </ContentPage.BindingContext>
+        <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <Button Text="Нажми" Command="{Binding ChangeText}"/>
+            <Button Text="Новая страничка" Command="{Binding NewPage}"/>
+            <Label Text="{Binding Number}"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
